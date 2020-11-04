@@ -7,6 +7,7 @@
 - [Config](#config)
 - [Setup](#setup)
 - [StartOCR](#startocr)
+- [Example](#example)
 - [Requirements](#requirements)
 
 
@@ -51,6 +52,9 @@ python run.py input_path output_path
 ```
 
 `input_path` and `output_path` both need to be absolute path for directories. The script will convert each file to xls format with the same file name.
+
+## Example
+![Alt text](Example_image/input?raw=true "Title")
 
 ## Requirements
 - python3
