@@ -5,7 +5,7 @@
 - [Introduction](#introduction)
 - [Config](#config)
 - [Setup](#setup)
-- [Start OCR](#start ocr)
+- [StartOCR](#startocr)
 
 
 ## Introduction
@@ -26,9 +26,13 @@ SECRET_KEY = ''
 
 To install the Baidu OCR platform, run `python setup.py`.
 
-## Start OCR
+## StartOCR
 
-Navigate to the package directory and run the command `python run.py input_path output_path`
+Navigate to the package directory and run the command 
+```
+python run.py input_path output_path
+```
+
 `input_path` and `output_path` both need to be absolute path for directories. The script will convert each file to xls format with the same file name.
 
 ** Requirements for the data collection script
