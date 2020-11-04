@@ -54,7 +54,9 @@ python run.py input_path output_path
 `input_path` and `output_path` both need to be absolute path for directories. The script will convert each file to xls format with the same file name.
 
 ## Example
+Original image
 ![Alt text](Example_image/input.png)
+Output xls file
 ![Alt text](Example_image/converted.png)
 
 
