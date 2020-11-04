@@ -55,6 +55,8 @@ python run.py input_path output_path
 
 ## Example
 ![Alt text](Example_image/input.png)
+![Alt text](Example_image/converted.png)
+
 
 ## Requirements
 - python3
