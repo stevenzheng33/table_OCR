@@ -3,14 +3,31 @@
 ## Table of Contents
 
 - [Introduction](#introduction)
+- [Structure](#structure)
 - [Config](#config)
 - [Setup](#setup)
 - [StartOCR](#startocr)
+- [Requirements](#requirements)
 
 
 ## Introduction
 The script is converts all of the pictures in a directory into excel tables. The intended language for the tables is Chinese.
 The underlying OCR engine is [Baidu OCR](https://cloud.baidu.com/doc/OCR/s/Ek3h7yeiq).
+
+## Structure
+```
+.
+├──table_ocr
+│  ├── aip  (Baidu OCR source file)             
+│  ├── bin (Baidu OCR source file)
+│  ├── baidu_config.py (file to store app information)
+│  └── LICENSE
+│  └── README.md (doc file)
+│  └── run.py  (main file to initiate script)
+│  └── setup.py  (setup file for Baidu SDK)
+│  └── table_script.py (source code for the script)
+└── ...
+```
 
 
 ## Config
@@ -28,14 +45,14 @@ To install the Baidu OCR platform, run `python setup.py`.
 
 ## StartOCR
 
-Navigate to the package directory and run the command 
+Navigate to the package directory and run the command
 ```
 python run.py input_path output_path
 ```
 
 `input_path` and `output_path` both need to be absolute path for directories. The script will convert each file to xls format with the same file name.
 
-** Requirements for the data collection script
+## Requirements
 - python3
 - request
 - os
