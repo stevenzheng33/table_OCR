@@ -19,21 +19,18 @@ The underlying OCR engine is [Baidu OCR](https://cloud.baidu.com/doc/OCR/s/Ek3h7
 ```
 .
 ├──table_ocr
-│  ├── aip  (Baidu OCR source file)             
-│  ├── bin (Baidu OCR source file)
-│  ├── baidu_config.py (file to store app information)
 │  └── LICENSE
 │  └── README.md (doc file)
 │  └── run.py  (main file to initiate script)
-│  └── setup.py  (setup file for Baidu SDK)
 │  └── table_script.py (source code for the script)
+|  └── Example_image (pictures for the readme file)   
 └── ...
 ```
 
 
 ## Config
 
-User need to first obtain the tokens for the [Baidu cloud api](https://cloud.baidu.com/doc/OCR/s/dk3iqnq51). Follow the instructions in the link and create an account. Register an app to get APP ID, API KEY and SECRET KEY. Fill in the information in the `baidu_config.py`.
+User need to first obtain the tokens for the [Baidu cloud api](https://cloud.baidu.com/doc/OCR/s/dk3iqnq51). Follow the instructions in the link and create an account. Register an app to get APP ID, API KEY and SECRET KEY. Fill in the information in the `table_script.py`.
 
 ```
 APP_ID = ''
@@ -42,7 +39,7 @@ SECRET_KEY = ''
 ```
 ## Setup
 
-To install the Baidu OCR platform, run `python setup.py`.
+To install the Baidu OCR platform, run `pip install baidu-aip`.
 
 ## StartOCR
 
