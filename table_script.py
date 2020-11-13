@@ -1,14 +1,21 @@
+import pandas as pd
+import numpy as np
 import requests
 import os
+import time
 
 from aip import AipOcr
 
-import baidu_config as bc
 
+""" Your APPID AK SK """
+APP_ID = 'Your App ID'
+API_KEY = 'Your Api Key'
+SECRET_KEY = 'Your Secret Key'
 
-""" My APPID AK SK """
+if APP_ID == 'Your App ID' or API_KEY == 'Your Api Key' or SECRET_KEY == 'Your Secret Key':
+    print('Make sure you input the APP information')
 
-client = AipOcr(bc.APP_ID, bc.API_KEY, bc.SECRET_KEY)
+client = AipOcr(APP_ID, API_KEY, SECRET_KEY)
 
 
 def get_file_content(filePath):
@@ -35,3 +42,4 @@ def convert_all_images(inputpath, outputpath):
         if filename.endswith(".jpg") or filename.endswith(".png"):
             completeName = os.path.join(inputpath, filename)
             read_image_to_xls(completeName, filename[:-4]+'.xls', outputpath)
+            time.sleep(10)
